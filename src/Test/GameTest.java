@@ -23,6 +23,7 @@ public class GameTest {
 		Player p4 = new Player("Antonio", new Blanka(7, 115, new Special("Electric Thunder", 20)));
 
 		Game game = new Game(p1, p2);
+	// Eu deixei bastantes sysout que mostram como decorreu a luta;
 		game.StartGame();
 
 		assertEquals((p2.getCharacter().getLife() <= 0), (game.getWinner() == p1.getName()));
